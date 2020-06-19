@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en">
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>to-do app</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container center">
+      <h1 class="center title">my to-do app</h1>
+      <div class="flow-right controls">
+        <span>item count: <span id="item-count">0</span></span>
+        <span>unchecked count: <span id="unchecked-count">0</span></span>
+      </div>
+      <div>
+        <br><br>
+        <span class = "todo-make">
+          <input type = "text" id = 'todo-text' class = "todo-text" placeholder = "write a new to-do here!">
+          <button onClick="new_todo()">make to-do</button>
+        </span>
+      </div>
+      <ul id="todo-list" class="todo-list"></ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
